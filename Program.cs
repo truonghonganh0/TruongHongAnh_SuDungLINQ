@@ -34,9 +34,7 @@ namespace TruongHongAnh_SuDungLINQ
                 TongSoLuong = group.Count(),
                 TongGiaTri = group.Sum(car => car.GiaTien)
             }).ToList();
-
-            Console.WriteLine("2c - Car by manufacturer:");
-            CarGroup.ForEach(group => Console.WriteLine($"Manufacturer: {group.NhaSanXuat}, Count: {group.TongSoLuong}, Total Price: {group.TongGiaTri}"));
+            CarGroup.ForEach(group => Console.WriteLine($"Hang san xuat: {group.NhaSanXuat}, So luong: {group.TongSoLuong}, Tong gia tri: {group.TongGiaTri}"));
 
             //Cau 3
             Console.WriteLine("3a");
@@ -48,7 +46,11 @@ namespace TruongHongAnh_SuDungLINQ
             }
 
             Console.WriteLine("3b");
-            var
+            Console.WriteLine("Ten CTy chu quan cua Truck: ");
+            foreach (var truck in TruckYear)
+            {
+                Console.WriteLine($"Ten CTy: { truck.CTy}");
+            }
 
             Console.ReadLine();
         }

@@ -11,7 +11,7 @@ namespace TruongHongAnh_SuDungLINQ
         public string NhaSX { get; set; }
         public Car(string tenpt, int namsx, double giatien, string nhasx) : base(tenpt, namsx, giatien)
         {
-            NhaSX = NhaSX;
+            NhaSX = nhasx;
         }
     }
 }
